@@ -5,24 +5,26 @@ const fs = require('fs')
 // Lodash module : utility library for node.js 
 const _ = require('lodash')
 
-// Yargs module: A node.js model to work with argv
+// Yargs module: A node.js model make work with argv simple
 const yargs = require('yargs')
 
 // Local module
 const notes = require('./notes.js')
 
-let command = process.argv[2]
+let argv = yargs.argv
+let command = argv._[0]
 
 console.log(command)
+console.log(argv)
 
 if(command === 'add') {
-    console.log('Add new note')
+    notes.addNote(argv.title, argv.body)
 } else if(command === 'list') {
-    console.log('List all notes')
+    notes.getAll()
 }else if(command === 'read') {
-    console.log('Fetching note')
+    notes.getNote(argv.title)
 } else if(command === 'remove') {
-    console.log('remove note')
+    notes.removeNote(argv.title)
 } else {
     console.log('Command not recognized')
 }
