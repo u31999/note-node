@@ -2,8 +2,13 @@ console.log('Starting app.js')
 
 const fs = require('fs')
 
+// Lodash module : utility library for node.js 
 const _ = require('lodash')
-// local module
+
+// Yargs module: A node.js model to work with argv
+const yargs = require('yargs')
+
+// Local module
 const notes = require('./notes.js')
 
 let command = process.argv[2]
