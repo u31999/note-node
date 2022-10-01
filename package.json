@@ -4,7 +4,9 @@
   "description": "Node project for learning purpose",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "note": "node app.js",
+    "note help": "npm run note --help"
   },
   "author": "Ahmed Hassan",
   "license": "ISC",
