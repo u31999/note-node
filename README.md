@@ -10,24 +10,24 @@
 
 #### To add note :
 
-- npm run note add --title "The title" --body "The body"
+- node app.js add --title "The title" --body "The body"
 
 #### To Read note :
 
-- npm run note read --title "The title"
+- node app.js read --title "The title"
 
 #### To Remove note :
 
-- npm run note remove --title "The title"
+- node app.js remove --title "The title"
 
 #### To list all notes :
 
-- npm run note list
+- node app.js list
 
 #### Check all command available, with there alias :
 
-- npm run note help
+- node app.js --help
 
 #### Or :
 
-- npm run note <command> --help
+- node app.js <command> --help
