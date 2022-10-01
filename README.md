@@ -30,4 +30,4 @@
 
 #### Or :
 
-- node app.js <command> --help
+- node app.js <"command"> --help
